@@ -1,3 +1,9 @@
+import TaskForm from "./components/TaskForm";
+
 export default function App() {
-  return <div>App</div>;
+  return (
+    <div>
+      <TaskForm />
+    </div>
+  );
 }
