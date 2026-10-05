@@ -26,7 +26,7 @@ export default function TaskForm({ addTask }) {
         />{" "}
         <span>
           <button type="submit">Add Task</button>
-        </span>
+        </span>{" "}
         <div id="btns">
           <select
             value={priority}

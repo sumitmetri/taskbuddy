@@ -29,13 +29,15 @@ export default function App() {
   return (
     <div className="App">
       <header>
-        <h1 className="title">TaskBuddy</h1>
+        <h1 className="title">
+          Task<span>Buddy</span>
+        </h1>
         <p className="tagline">Your friendly Task Manager</p>
       </header>
       <TaskForm addTask={addTask} />
       <TaskList tasks={tasks} updateTask={updateTask} deleteTask={deleteTask} />
       <ProgressTracker tasks={tasks} />
-      {tasks.length > 0 && ( // {condition && expression}
+      {tasks.length > 0 && ( // {condition && expression} displays the expression only if the condition is true
         <button className="clear-btn" onClick={() => setTasks([])}>
           Clear All Tasks
         </button>

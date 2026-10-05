@@ -2,11 +2,11 @@ import React from "react";
 
 export default function TaskList({ tasks, updateTask, deleteTask }) {
   const toggleComplete = (index) => {
-    const updatedTasks = {
-      ...tasks[index],
+    const updatedTask = {
+      ...tasks[index],   // Spread operator to copy the existing particular task properties
       completed: !tasks[index].completed,
     };
-    updateTask(index, updatedTasks);
+    updateTask(index, updatedTask);
   };
 
   return (
